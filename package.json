@@ -1,0 +1,25 @@
+{
+  "name": "prime_weekend_challenge_03",
+  "version": "1.0.0",
+  "description": "jquery carousel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briandmpls/prime_weekend_challenge_03.git"
+  },
+  "author": "brian daves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briandmpls/prime_weekend_challenge_03/issues"
+  },
+  "homepage": "https://github.com/briandmpls/prime_weekend_challenge_03#readme",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.1",
+    "jquery": "^2.1.4"
+  }
+}
