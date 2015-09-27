@@ -10,42 +10,42 @@ $(function() {
             console.log(response[i]);
 
             var $message = $("<p>" + response[i].Name + "</p><p>" + response[i].Description + "</p></p>" + response[i].ShoutOuts + "</p>");
-            $(".num" + (i+"1")).append($message);
+            $(".epsilonites").append($message);
 
+            $('.jcarousel').jcarousel();
 
-           $('.jcarousel').jcarousel();
-
-            $('.jcarouselControlPrev')
-                .on('jcarouselControl:active', function() {
+            $('.jcarousel-control-prev')
+                .on('jcarouselcontrol:active', function() {
                     $(this).removeClass('inactive');
                 })
-                .on('jcarouselControl:inactive', function() {
+                .on('jcarouselcontrol:inactive', function() {
                     $(this).addClass('inactive');
                 })
                 .jcarouselControl({
                     target: '-=1'
                 });
 
-            $('.jcarouselControlNext')
-                .on('jcarouselControl:active', function() {
+            $('.jcarousel-control-next')
+                .on('jcarouselcontrol:active', function() {
                     $(this).removeClass('inactive');
                 })
-                .on('jcarouselControl:inactive', function() {
+                .on('jcarouselcontrol:inactive', function() {
                     $(this).addClass('inactive');
                 })
                 .jcarouselControl({
                     target: '+=1'
                 });
 
-            $('.jcarouselPagination')
-                .on('jcarouselPagination:active', 'a', function() {
+            $('.jcarousel-pagination')
+                .on('jcarouselpagination:active', 'a', function() {
                     $(this).addClass('active');
                 })
-                .on('jcarouselPagination:inactive', 'a', function() {
+                .on('jcarouselpagination:inactive', 'a', function() {
                     $(this).removeClass('active');
                 })
                 .jcarouselPagination();
         }
+
 
     });
 });

@@ -13,6 +13,10 @@ app.get('/',function(require,response){
     response.sendFile(__dirname + '/public/views/index.html');
 });
 
+app.get('/', function(request, response) {
+    response.sendFile(__dirname + '/public/assets/CSS/stylesheet.css')
+});
+
 app.get('/getStudents',function(require,response){
     console.log('hit get data route');
     response.send(students);
