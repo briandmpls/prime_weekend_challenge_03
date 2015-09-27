@@ -9,7 +9,7 @@ $(function() {
         for (var i = 0; i < response.length; i++) {
             console.log(response[i]);
 
-            var $message = $("<p>" + response[i].Name + "</p><p>" + response[i].Description + "</p></p>" + response[i].ShoutOuts + "</p>");
+            var $message = $("<li><p>" + response[i].Name + "</p><p>" + response[i].Description + "</p></p>" + response[i].ShoutOuts + "</p></li>");
             $(".epsilonites").append($message);
 
             $('.jcarousel').jcarousel();
