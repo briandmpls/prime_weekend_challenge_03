@@ -2,7 +2,7 @@
  * Created by briandaves on 9/26/15.
  */
 var express = require('express');
-var students = require('../models/students');
+var students = require('public/assets/data/students');
 
 var app = express();
 
