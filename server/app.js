@@ -2,7 +2,7 @@
  * Created by briandaves on 9/26/15.
  */
 var express = require('express');
-var students = require('public/assets/data/students');
+var students = require('./public/assets/data/students');
 
 var app = express();
 
@@ -23,7 +23,7 @@ app.get('/getStudents',function(require,response){
 });
 
 
-var server = app.listen(3000, function(){
+var server = app.listen(process.env.port, function(){
     var port = server.address().port;
     console.log('listening on port:',port);
 });
